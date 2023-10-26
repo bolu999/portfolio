@@ -1,0 +1,108 @@
+/* Reset some default styles */
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #111;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Initially hide the navigation menu */
+.nav-menu .menu-list {
+    display: none;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style the menu items (buttons) */
+.menu-item {
+    background: #111;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background: #333;
+}
+
+/* Hero section styles */
+#hero {
+    background: url('hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Add more CSS to match your design as needed */
+
+/* Add CSS to reveal the menu when the button is clicked */
+.menu-button.active + .menu-list {
+    display: block;
+}
+/* Add CSS for the dropdown menu */
+.submenu {
+    display: none;
+    position: absolute;
+    background: #e10808;
+    padding: 10px 0;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+/* Style the dropdown menu items (submenu buttons) */
+.submenu-item {
+    display: block;
+    color: #e71313;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+
+.submenu-item:hover {
+    background: #333;
+}
